@@ -24,8 +24,19 @@ class Sklad {
                                         alert("Musíte vyplnit všechny tři údaje!");
                                 };
     }
+
+    seradTonery() {
+            this.tonery.sort(function(a, b){  
+                var x = a.kod.toLowerCase();
+                var y = b.kod.toLowerCase();
+                if (x < y) {return -1;}
+                if (x > y) {return 1;}
+                return 0;
+           });                  
+    }    
     
-    vypisTonery() {                   
+    vypisTonery() {  
+                this.seradTonery();     
                 this.vypisElement.innerHTML = "";
                 for (const toner of this.tonery) {                       
                                          
