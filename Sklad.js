@@ -44,7 +44,34 @@ class Sklad {
                                                   
                         radek.innerHTML += `<mark>${toner.kod}</mark> <strong>${toner.tiskarna}</strong> <em>počet: ${toner.pocet}</em>`;
                         
-                        this.vypisElement.appendChild(radek);       
+                        this.vypisElement.appendChild(radek);
+                         
+                        this._pridejTlacitko("Upravit kod", () => {
+                               const novyKod = prompt("Zadejte aktualní kod toneru?", toner.kod);
+                               if (novyKod !== "" && novyKod !== null) {
+                                   toner.kod = novyKod;
+                                   this.ulozTonery();
+                                   this.vypisTonery();  
+                               }                                 
+                        });
+                         
+                        this._pridejTlacitko("Upravit název tiskárny", () => {
+                               const novaTiskarna = prompt("Zadejte aktualní název tiskárny?", toner.tiskarna);
+                               if (novaTiskarna !== "" && novaTiskarna !== null) {
+                                   toner.tiskarna = novaTiskarna;
+                                   this.ulozTonery();
+                                   this.vypisTonery();  
+                               }                                 
+                        });
+                        
+                        this._pridejTlacitko("Upravit počet", () => {
+                               const novyPocet = prompt("Zadejte aktualní počet tonerů?", toner.pocet);
+                               if (novyPocet !== "" && novyPocet !== null) {
+                                   toner.pocet = novyPocet;
+                                   this.ulozTonery();
+                                   this.vypisTonery();  
+                               }                                 
+                        });      
                         
                         this._pridejTlacitko("Smazat", () => {
                                 if (confirm("Opravdu si přejete odstranit úkol?")) {
