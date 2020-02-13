@@ -46,6 +46,14 @@ class Sklad {
                         
                         this.vypisElement.appendChild(radek);       
                         
+                        this._pridejTlacitko("Smazat", () => {
+                                if (confirm("Opravdu si přejete odstranit úkol?")) {
+                                        this.tonery = this.tonery.filter(z => z !== toner); 
+                                        this.ulozTonery();
+                                        this.vypisTonery();
+                                }
+                        });
+                        
                         const konecRadku = document.createElement("br");
                         this.vypisElement.appendChild(konecRadku);
                 }
