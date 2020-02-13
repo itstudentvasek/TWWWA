@@ -50,6 +50,14 @@ class Sklad {
                         this.vypisElement.appendChild(konecRadku);
                 }
      }
+
+        _pridejTlacitko(titulek, callback) {
+                const button = document.createElement("button");
+                button.onclick = callback;
+                button.innerText = titulek;
+                this.vypisElement.appendChild(button);
+                
+        }
                
         ulozTonery() {
                 localStorage.setItem("tonery", JSON.stringify(this.tonery));
