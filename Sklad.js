@@ -12,7 +12,9 @@ class Sklad {
          
         
     }          
-       
-       
-       
+               
+        ulozTonery() {
+                localStorage.setItem("tonery", JSON.stringify(this.tonery));
+        }
+
 }
