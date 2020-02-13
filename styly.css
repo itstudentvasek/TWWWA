@@ -4,3 +4,18 @@ div.container {
     width: 800px;
     position: relative;   
 }
+input {
+	padding: 8px;
+	border: 1px solid #909090;
+	height: 16px;
+}
+
+input#kod {
+	width: 100px;
+}
+input#tiskarna {
+	width: 300px;
+}
+input#pocet {
+	width: 100px;
+}
