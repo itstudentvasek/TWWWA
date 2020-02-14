@@ -12,10 +12,10 @@ input {
 }
 
 input#kod {
-	width: 100px;
+	width: 80px;
 }
 input#tiskarna {
-	width: 300px;
+	width: 200px;
 }
 input#pocet {
 	width: 100px;
@@ -25,3 +25,22 @@ button#potvrdit {
 	height: 38px;
   width: 200px;
 }
+span.kod {
+	padding: 8px;
+	height: 16px;
+  width: 80px;
+  display: inline-block;
+}
+span.tiskarna {
+	padding: 8px;
+	height: 16px;
+  width: 200px;
+  display: inline-block;
+}
+span.pocet {
+	padding: 8px;
+	height: 16px;
+  width: 50px;
+  display: inline-block;
+}
+
