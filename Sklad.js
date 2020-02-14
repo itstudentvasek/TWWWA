@@ -9,6 +9,7 @@ class Sklad {
         this.pocetInput = document.getElementById("pocet");
         this.potvrditButton = document.getElementById("potvrdit");
         this.vypisElement = document.getElementById("seznam-toneru");
+        this.formularForm = document.getElementById("formular");
          
         this.pridejToner();
     }          
@@ -20,6 +21,7 @@ class Sklad {
                                         this.tonery.push(toner);
                                         this.ulozTonery();
                                         this.vypisTonery();
+                                        this.formularForm.reset();
                                 } else
                                         alert("Musíte vyplnit všechny tři údaje!");
                                 };
