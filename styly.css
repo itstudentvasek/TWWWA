@@ -3,7 +3,8 @@ div.container {
     margin-right: auto;
     width: 800px;
     position: relative; 
-    padding: 10px;  
+    padding: 10px;
+    background-color: #00FFFF;  
 }
 input {
 	padding: 8px;
@@ -25,6 +26,18 @@ button#potvrdit {
 	height: 38px;
   width: 200px;
 }
+
+button {
+	background: #0000FF;
+	color: #FFFFFF;
+} 
+button:hover {
+	background: #FF0000;
+} 
+button:active {
+	background: #00FF00;
+}
+ 
 span.kod {
 	padding: 8px;
 	height: 16px;
