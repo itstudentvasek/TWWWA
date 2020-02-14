@@ -30,17 +30,27 @@ span.kod {
 	height: 16px;
   width: 80px;
   display: inline-block;
+  border-bottom-width: 0px;
 }
 span.tiskarna {
 	padding: 8px;
 	height: 16px;
   width: 200px;
   display: inline-block;
+  border-bottom-width: 0px;
 }
 span.pocet {
 	padding: 8px;
 	height: 16px;
   width: 50px;
   display: inline-block;
+  border-bottom-width: 0px;
 }
-
+span {
+  padding: 0px;
+	height: 33px;
+  width: 386px;
+  display: inline-block;
+  border-bottom-style: solid;       
+  border-bottom-width: 1px; 
+}
