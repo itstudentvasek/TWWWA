@@ -42,7 +42,7 @@ class Sklad {
                                          
                         const radek = document.createElement("span");
                                                   
-                        radek.innerHTML += `<mark>${toner.kod}</mark> <strong>${toner.tiskarna}</strong> <em>počet: ${toner.pocet}</em>`;
+                        radek.innerHTML += `<span class="kod">${toner.kod}</span> <span class="tiskarna">${toner.tiskarna}</span> <span class="pocet">${toner.pocet}</span>`;
                         
                         this.vypisElement.appendChild(radek);
                          
