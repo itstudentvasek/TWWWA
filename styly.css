@@ -45,6 +45,7 @@ span.pocet {
   width: 50px;
   display: inline-block;
   border-bottom-width: 0px;
+  text-align: right;
 }
 span {
   padding: 0px;
