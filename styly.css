@@ -26,6 +26,11 @@ button#potvrdit {
 	height: 38px;
   width: 200px;
 }
+button#reset {
+	padding: 8px;
+	height: 38px;
+  width: 120px;
+}
 
 button {
 	background: #0000FF;
